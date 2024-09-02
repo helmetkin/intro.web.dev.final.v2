@@ -17,7 +17,7 @@ document.addEventListener('DOMContentLoaded', function() {
         sessionStorage.setItem('cartItems', JSON.stringify([]));
     }
 
-    // Add items to cart
+ 
     addToCartButtons.forEach(button => {
         button.addEventListener('click', function() {
             const product = this.getAttribute('data-product');
@@ -31,18 +31,17 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
-    // View Cart
+  
     viewCartButton.addEventListener('click', function() {
         cartModal.style.display = 'block';
         displayCartItems();
     });
 
-    // Close Cart Modal
+ 
     closeCartModal.addEventListener('click', function() {
         cartModal.style.display = 'none';
     });
 
-    // Display Cart Items
     function displayCartItems() {
         const cartItems = JSON.parse(sessionStorage.getItem('cartItems'));
         cartItemsContainer.innerHTML = '';
@@ -58,7 +57,7 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     }
 
-    // Clear Cart
+
     clearCartButton.addEventListener('click', function() {
         if (sessionStorage.getItem('cartItems') && JSON.parse(sessionStorage.getItem('cartItems')).length > 0) {
             sessionStorage.setItem('cartItems', JSON.stringify([]));
@@ -69,7 +68,6 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 
-    // Process Order
     processOrderButton.addEventListener('click', function() {
         if (sessionStorage.getItem('cartItems') && JSON.parse(sessionStorage.getItem('cartItems')).length > 0) {
             sessionStorage.setItem('cartItems', JSON.stringify([]));
@@ -80,7 +78,7 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 
-    // Store Contact Form Data using localStorage
+ 
     const submitButton = document.getElementById('submit-button');
     if (submitButton) {
         submitButton.addEventListener('click', function() {

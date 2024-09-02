@@ -2,40 +2,66 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bloom Valley Nursery - Custom Page</title>
+    <title>Our Community - Bloom Valley Nursery</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+   
     <header>
+        <img src="./assets/Bloom Valley nursery.png" alt="Bloom Valley Nursery Logo" id="logo">
+        <h1>Bloom Valley Nursery</h1>
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="gallery.html">Gallery</a></li>
-                <li><a href="about.html">About Us/Contact</a></li>
-                <li><a href="custom.html">Custom Page</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="custom.html">Our Community</a></li>
             </ul>
         </nav>
-        <div class="logo">
-            <img src="/assets/Bloom Valley nursery.png" alt="Bloom Valley Nursery Logo">
-            <h1>Bloom Valley Nursery</h1>
-        </div>
     </header>
 
     <main>
-        <section class="custom-content">
+       
+        <section>
             <h2>Customer Testimonials</h2>
-            <p>"Bloom Valley Nursery helped me transform my garden into a beautiful oasis. Highly recommend!" - Jane Doe</p>
-            <p>"Fantastic selection of plants and great customer service. I will definitely be returning!" - John Smith</p>
+            <p>"Bloom Valley Nursery has the best selection of plants! Their customer service is outstanding." - Jane Doe</p>
+            <p>"I always find what I need here, whether it's plants or gardening tools." - John Smith</p>
+        </section>
 
+        <section>
             <h2>Community Involvement</h2>
-            <p>We are actively involved in local community events and garden shows. Check out our upcoming events!</p>
+            <p>We actively participate in local gardening clubs and community events. Join us for our next workshop on sustainable gardening!</p>
+        </section>
+
+        <section>
+            <h2>Events and Collaborations</h2>
+            <p>We collaborate with local schools to educate children about the importance of plants and gardening. Check out our upcoming events!</p>
         </section>
     </main>
 
     <footer>
-        <p>&copy; 2024 Bloom Valley Nursery. All rights reserved.</p>
-        <button id="subscribe-button">Subscribe</button>
+        <form id="subscribe-form">
+            <label for="email">Subscribe to our newsletter:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email">
+            <button type="button" id="subscribe-button">Subscribe</button>
+        </form>
+        <div class="social-media">
+            <a href="https://www.facebook.com">Facebook</a>
+            <a href="https://www.instagram.com">Instagram</a>
+            <a href="https://www.twitter.com">Twitter</a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="custom.html">Our Community</a></li>
+            </ul>
+        </nav>
     </footer>
+
+    <script src="scripts.js"></script>
 </body>
 </html>
