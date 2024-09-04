@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-   
+
     <header>
         <img src="./assets/Bloom Valley nursery.png" alt="Bloom Valley Nursery Logo" id="logo">
         <h1>Bloom Valley Nursery</h1>
@@ -23,7 +23,7 @@
     </header>
 
     <main>
-       
+
         <section>
             <h2>Customer Testimonials</h2>
             <p>"Bloom Valley Nursery has the best selection of plants! Their customer service is outstanding." - Jane Doe</p>
@@ -39,14 +39,37 @@
             <h2>Events and Collaborations</h2>
             <p>We collaborate with local schools to educate children about the importance of plants and gardening. Check out our upcoming events!</p>
         </section>
+        
+        <div id="image-modal" class="modal">
+            <div class="modal-content">
+                <span class="close" id="close-image-modal">&times;</span>
+                <img id="modal-image" src="" alt="Large view">
+            </div>
+        </div>
+
     </main>
 
     <footer>
         <form id="subscribe-form">
-            <label for="email">Subscribe to our newsletter:</label>
-            <input type="email" id="email" name="email" placeholder="Enter your email">
-            <button type="button" id="subscribe-button">Subscribe</button>
+            <div class="subscribe">
+                <h2 class="subscribe__title">Let's keep in touch</h2>
+                <p class="subscribe__copy">Subscribe to keep up with fresh news and exciting updates. We promise not to spam you!</p>
+                <div class="form">
+                    <input type="email" id="subscribe-email" class="form__email" placeholder="Enter your email address" />
+                    <button type="button" class="form__button" id="subscribe-button">Send</button>
+                </div>
+                <div class="notice">
+                    <input type="checkbox" id="subscribe-checkbox">
+                    <span class="notice__copy">I agree to my email address being stored and used to receive a monthly newsletter.</span>
+                </div>
+            </div>
         </form>
+        <div id="subscribe-modal" class="modal">
+            <div class="modal-content">
+                <span class="close" id="close-subscribe-modal">&times;</span>
+                <p>Thank you for subscribing. We'll keep you updated with our latest news!</p>
+            </div>
+        </div>
         <div class="social-media">
             <a href="https://www.facebook.com">Facebook</a>
             <a href="https://www.instagram.com">Instagram</a>
